@@ -1,0 +1,64 @@
+Objective:
+This prgram will allow the user to play Rock Paper Scissors against the computer
+-We will...
+-create code that checks who won ech round
+-create code that takes the input(choices) from the user
+-create code that takes 'input' from the computer
+-check if the user wants to quit OR if the user doesn't enter one of the options
+-loop each round of the game
+-add statements at the end and beginning that welcome and thank the user for playing
+-loop the whole game, so that they can keep playing until they choose to quit
+
+Pseudocode:
+#set variable keepPlaying to ture
+#While keepPlaying it true:
+
+     #print statement welcoming player to the game
+     #print statement stating the rules (best 2 out of 3 Press 'q' to quit)
+     
+     #make a key that assigns a number to each choise for the computer
+     #(rock is 1, scissors is 2, paper is 3)
+     
+     #import the random funtion - the cimputer makes its choice randomly from this function
+     
+     #set computer's score to 0
+     #set player's score to 0
+     
+     #while player's score is less than 2 and computer's score is less than 2: -- thins means that the game is still on
+     
+        #computer's choice = random number between 1 and 3 (random function gets used here)
+        #player's choisce = input(ask playerto select rock, paper, or scissors)
+        
+        #start checking user options
+        #useChoice = userChoice.lower()
+        #if player inputs 'q': --player wants to end the game
+        #   set keepPlaying to false -- ends the loop
+        #   stop the loop --whoo! break statement
+        
+        #else if (player inputs rock and cimputer chooses rock) or 
+        #(player inputs paper and computer chooses paper) or
+        #(player inputs paper and computer chooses scissors):
+        #   print out DRAW
+        #   print out player's score and computer's score
+        
+        #else if (player inputs rock and cumputer chooses scossors) or
+        #(player inputs paper and computer chooses paper) or 
+        #(player inputs paper and computer chooses scissors):
+        #   add one to the player's score
+        #   print out player's score and computer's score
+        
+        #else if (player inputs rock and cumputer chooses paper) or
+        #(player inputs scissors and computer chooses rock) or 
+        #(player inputs paper and computer chooses scissors):
+        #   add one to the computer's score
+        #   print out player's score and computer's score
+        
+        #else:
+        #   tell the user their input was not valid
+        
+    #print statmesnt thanking the player for playing
+    #if player's score is 2:
+    #   print statement letting player know they won
+    #if computer's score is 2
+    #   print staement letting plyer know the computer won
+    #print out player's score and computer's score
